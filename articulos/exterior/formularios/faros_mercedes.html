@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Pagina web dedicada a la compra-venta y informacion sobre los coches historicos y clasicos">
+    <meta name="keywords" content="compra, venta, coches, coches clasicos, coches historicos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../style.css">
+    <title>CHC | Comprar Faros Mercedes-Benz W113</title>
+</head>
+<body id="body">
+    <!--Header-->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                
+                <ul class="nav_links">
+                    <a href="../../../index.html"><img src="../../../imagenes/logo.png" alt="" id="logo_menu"></a>
+                    <div class="nombre_slogan">
+                        <p class="nombre_empresa">CHC</p>
+                        <p class="slogan_empresa">Since 1984</p>
+                    </div>
+                    <li class="nav_link">
+                        <a href="../../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav_link desplegable">
+                        <a href="#">Servicios</a>
+                        <ul class="menu_desplegable">
+                            <li><a href="../../../compra.html">Compra</a></li>
+                            <li><a href="../../../venta.html">Venta</a></li>
+                            <li><a href="../../../alquiler.html">Alquiler</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav_link desplegable">
+                        <a href="#">Articulos</a>
+                        <ul class="menu_desplegable">
+                            <li><a href="../../../articulos/interior.html">Interior</a></li>
+                            <li><a href="../../../articulos/exterior.html">Exterior</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_link">
+                        <a href="../../../calendario.html">Calendario</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="../../../soporte.html">Servicio al cliente</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="../../../guia.html">Guia</a>
+                    </li>
+                    <li class="nav_link2 desplegable2">
+                        <a href="#"><img src="../../../imagenes/login3.png" alt="" id="login_menu"></a>
+                        <ul class="menu_desplegable2">
+                            <li><a href="../../../registro.html">Registrate</a></li>
+                            <li><a href="../../../login.html">Inicia sesion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--body-->
+    <div id="formulario_articulo">
+        <form action="../../../compra_realizada.html" method="post" enctype="multipart/form-data">
+            <div class="producto_seleccionado">
+                <div class="logo_producto">
+                    <h2>Producto Seleccionado:</h2>
+                    <img src="../../../articulos/exterior/imagenes/faros_mercedes.png" alt="" id="emblema_mercedes">
+                    <h2>Faros Mercedes-Benz W113</h2>
+                </div>
+                <div class="desc_precio">
+                    <h2>Precio: 250€</h2>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Datos generales</legend>
+               <div class="bloques">
+                <div class="bloque1">
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <input type="text" id="nombre" required placeholder="Nombre">
+                    <br>
+                    <label for="apellidos">Apellidos</label>
+                    <br>
+                    <input type="text" id="apellidos" required placeholder="Apellidos">
+                    <br>
+                    <label for="edad">Edad</label>
+                    <br>
+                    <input type="number" id="edad" name="edad" placeholder="Edad" min="18" required>
+                </div>
+                <div class="bloque2">
+                    <label for="telefono">Numero de telefono</label>
+                    <br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Numero de telefono" pattern="[0-9]{9}" maxlength="9"required>
+                    <br>
+                    <label for="email">Correo electronico</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="correo electronico" required>
+                    <br>
+                    <label for="dni">DNI</label>
+                    <br>
+                    <input type="text" id="dni" name="dni" placeholder="DNI" pattern="[0-9]{8}[A-Z]" maxlength="9" required>
+                </div>
+               </div>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de envio</legend>
+                <div class="bloques">
+                    <div class="bloque1">
+                    <label for="direccion_envio">Direccion de envio</label>
+                    <br>
+                    <input type="text" id="calle" name="calle" placeholder="Calle" required>
+                    <br>
+                    <input type="text" id="numero" name="numero" placeholder="numero" required>
+                </div>
+                <div class="bloque2">
+                    <br>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="ciudad" required>
+                    <br>
+                    <input type="text" id="codigo_postal" name="codigo_postal" placeholder="codigo postal" maxlength="5" required>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Detalles de pago</legend>
+                <div class="bloques">
+                    <div class="bloque1">
+                        <label for="nombre_tarjeta">Nombre y apellidos</label>
+                        <br>
+                        <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" placeholder="Nombre y apellidos" required>
+                        <br>
+                        <label for="numero_tarjeta">Numero de la tarjeta</label>
+                        <br>
+                        <input type="text" id="numero_tarjeta" name="numero_tarjeta" placeholder="**** **** **** ****" maxlength="16" required>
+                    </div>
+                    <div class="bloque2">
+                        <label for="caducacion">Fecha de caducidad</label>
+                        <br>
+                        <input type="text" name="fecha_caducidad" id="fecha_caducidad" maxlength="5" placeholder="MM/YY" required>
+                        <br>
+                        <label for="cvv">Codigo de seguridad</label>
+                        <br>
+                        <input type="text" id="cvv" name="cvv" placeholder="***" pattern="[0-9]{3}" maxlength="3" required>  
+                    </div>    
+                </div>
+                   
+            </fieldset>
+            <input type="submit" value="Comprar" id="submit">
+        </form>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <img src="../../../imagenes/logo.png" alt="">
+            <p>&copy; 2024 CHC. Todos los derechos reservados.</p>
+            <div class="redes_sociales">
+                <a href="https://www.instagram.com"><img src="../../../imagenes/logos/instagram.png" alt="" id="icono_social"></a>
+                <a href="https://www.facebook.com"><img src="../../../imagenes/logos/facebook.png" alt="" id="icono_social"></a>
+                <a href="https://www.twitter.com"><img src="../../../imagenes/logos/x.png" alt="" id="icono_social"></a>
+                <a href="https://www.youtube.com"><img src="../../../imagenes/logos/youtube.png" alt="" id="icono_social"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
