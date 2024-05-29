@@ -1,0 +1,969 @@
+/*/ Fuente insertada de Google Fonts /*/
+
+.yellowtail-regular {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*/ ESTRUCTURA BASICA (Header, Body, Footer) /*/
+
+/*/----HEADER----/*/
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#logo_menu {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.nombre_empresa {
+    color: #440c0c;
+    font-family: "Yellowtail", cursive;
+    font-weight: bold;
+    font-size: 25pt;
+    margin-top: 11px;
+    margin-left: -50px;
+}
+
+.slogan_empresa {
+    color: #440c0c;
+    font-family: "Yellowtail", cursive;
+    font-weight: bold;
+    font-size: 15pt;
+    margin-top: -5px;
+    margin-left: -50px;
+
+}
+
+#login_menu {
+    width: 50px;
+    height: 50px;
+    padding-top: 2px;
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c1bdb5;
+    border-radius: 20px;
+    margin-top: 15px;
+    max-width: 1310px;
+    width: 1310px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 4px 12px rgba(193, 189, 181, 0.575);
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav_link, .menu_desplegable li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #440c0c;
+}
+
+.nav_links li {
+    margin-top: 15px;
+}
+
+.nav_link a {
+    text-decoration:  none;
+    color: #440c0c;
+}
+
+.menu_desplegable a:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(117, 117, 117, 0.575);
+
+}
+
+.menu_desplegable {
+    position: absolute;
+    min-width: 100px;
+    width: 130px;
+    margin-top: 100px;
+    padding: 10px -10px;
+    margin: 10px -30px;
+    background: #d6d2c9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(193, 189, 181, 0.575);
+    font-size: 12pt;
+    display: none;
+}
+
+.desplegable:hover .menu_desplegable{
+    display: block;
+}
+
+.nav_link:hover {
+    background-color: #d6d2c9;
+    border-radius: 10px;
+}
+
+
+.banner1{
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    max-width: 1310px;
+    width: 1310px;
+    margin-right: 10px;
+    height: 500px;
+}
+
+
+/*/ MENU DESPLEGABLE LOGIN /*/
+
+.nav_link, .menu_desplegable2 li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #440c0c;
+}
+
+
+
+.menu_desplegable a:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(117, 117, 117, 0.575);
+
+}
+
+.menu_desplegable2 {
+    position: absolute;
+    min-width: 100px;
+    width: 160px;
+    margin-top: 100px;
+    padding: 10px -10px;
+    margin: 10px -30px;
+    background: #d6d2c9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(193, 189, 181, 0.575);
+    font-size: 12pt;
+    display: none;
+}
+
+.desplegable2:hover .menu_desplegable2{
+    display: block;
+}
+
+.menu_desplegable2 a:hover {
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(117, 117, 117, 0.575);
+
+}
+
+.nav_link2, .menu_desplegable2 li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #440c0c;
+}
+
+.nav_link2 a {
+    text-decoration: none;
+    color: #440c0c;
+}
+
+/*/----BODY----/*/
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #440c0c;
+    min-width: 1310px;
+    width: 1340px; 
+    height: 100%;
+    align-items: center; 
+    display: table; 
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+.p_texto_index {
+    color: #440c0c;
+    font-family: sans-serif;
+    font-size: 14pt;
+    background-color: #c1bdb5;
+    text-align: left;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    margin-bottom: 25px;
+}
+
+.p_texto_index h3 {
+    margin-left: 19px;
+}
+/*/----FOOTER----/*/
+
+footer {
+    margin-right: -50px;
+    width: 1340px;
+    min-width: 1310px;
+}
+
+.footer {
+    background-color: #c1bdb5;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.footer img {
+    float: left;
+    align-items: left;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.footer p {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #440c0c;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.redes_sociales {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    padding-left: 51%;
+}
+
+#icono_social {
+    float: right;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+#icono_social:hover {
+    width: 35px;
+    height: 35px;
+}
+
+/*/ Codigo especifico /*/
+
+
+/*/ Pagina registro y login /*/
+#register_fieldset {
+    background-color: #d3cfc7;
+    padding: 25px;
+}
+input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px grey solid;
+    
+ }
+
+input::placeholder {
+    padding-left: 10px;
+ }
+
+ #label_formulario a {
+    color: #440c0c;
+    transition: all 0.5s ease;
+ }
+
+ #label_formulario a:hover {
+    border-radius: 10px;
+    font-size: 14pt;
+ }
+
+#formulario_articulo h1 {
+    color: #440c0c;
+}
+
+#p_register {
+    color: #440c0c;
+    text-align: justify ;
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#h1_login {
+    color: #440c0c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+ /*/ Pagina registro completado /*/
+
+.imagen_registro {
+    margin-top: 15%;
+}
+
+ .registro_completado {
+    font-family: sans-serif;
+    color: #440c0c;
+    background-color: #c1bdb5;
+    border-radius: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+ .imagen_registro {
+    width: 15%;
+}
+
+
+ /*/ Politica de privacidad /*/
+
+.politica {
+    color: #440c0c;
+    background-color: #c1bdb5;
+    border-radius: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+
+ /*/ Pagina web compra general /*/
+
+ #container{
+    width: 100%;
+    min-height: 600px;
+    margin-left: 50px;
+    margin-right: 50px;    
+}
+
+#container h2 {
+    font-family: sans-serif;
+    color: #c1bdb5;
+    font-size: 50px;
+    text-align: left;
+    margin-left: 60px;
+    text-decoration: underline;
+}
+
+#compra{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin-left: 2em;
+}
+.compra-caja{
+    border: 1px solid #CCCCCC;
+    background-color: #c1bdb5;
+    margin-left: 1em;
+    margin-top: 1em;
+    overflow: hidden;
+    padding: 1em;
+    border-radius: 20px;
+}
+.compra-caja img{
+    width: 100%;
+    padding-top: 1px;
+    border-radius: 5px;
+}
+.compra-caja p{
+    line-height: 1.5em;
+    text-align: left;
+    font-family: sans-serif;
+    color: #440c0c;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.compra-caja h4 {
+    text-align: left;
+    font-family: sans-serif;
+    color: #440c0c;
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.compra-caja a {
+ margin-top: 10px;
+ text-decoration: none;
+}
+
+#precio {
+    padding-top: 85px;
+}
+/*/ Pagina especifica compra /*/
+
+#coche_articulo {
+    background-color: #c1bdb5;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#coche_articulo h2 {
+    color: #440c0c;
+    font-family: sans-serif;
+    text-align: left;
+    padding-left: 25px;
+    float: left;
+}
+
+
+#articulo_titulo {
+    overflow: hidden;
+}
+
+#h2_titulo {
+    float:left;
+    padding-top: 15px;
+    font-size: 25pt;
+}
+
+#articulo_titulo p {
+    color: #440c0c;
+    font-family: sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: right;
+    margin-right: 50px;
+
+}
+
+#detalles {
+    background-color: #c1bdb5;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#detalles h2 {
+    color: #440c0c;
+    font-family: sans-serif;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+#texto a {
+    background-color: #440c0c;
+    color: #c1bdb5;
+    text-decoration: none;
+    font-size: 15pt;
+    font-family: sans-serif;
+    padding: 10px 10px 10px 10px;
+    margin-left: 125px;
+    margin-top: 25px;
+    transition: all 1s ease;
+}
+
+#texto a:hover {
+    background-color: #771717;
+    box-shadow: 0 0 10px 5px rgba(175, 16, 16, 0.555);
+
+}
+#detalles p {
+    color: #440c0c;
+    font-family: sans-serif;
+    text-align: justify;
+    padding-left: 30px;
+    padding-top: 10px;
+    float: left;
+}
+
+#detalles img  {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    float: left;
+}
+
+
+/*/ Codigo especifico para cada coche /*/
+
+#mustang {
+    float: left;
+    width: 130px;
+    margin-left: -15px;
+    margin-right: 23px;
+    padding-left: 15px;
+    padding-top: 5px;
+
+}
+
+#seat {
+    float: left;
+    width: 90px;
+    margin-left: 10px;
+    margin-right: 35px;
+    padding-left: 15px;
+    
+}
+
+#porsche {
+    float: left;
+    width: 100px;
+    padding-left: 15px;
+    margin-right: 38px;
+
+}
+
+#bmw {
+    float: left;
+    width: 70px;
+    margin-right: 45px;
+    padding-left: 35px;
+    padding-top: -5px
+}
+
+#audi {
+    float: left;
+    width: 100px;
+    margin-right: 40px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#mercedes {
+    float: left;
+    width: 100px;
+    margin-right: 38px;
+    padding-left: 15px;
+
+}
+
+/*/ Interior y exterior /*/
+
+.compra_caja a {
+    background-color: #440c0c;
+    color: #c1bdb5;
+    text-decoration: none;
+    font-size: 15pt;
+    font-family: sans-serif;
+    padding: 10px 10px 10px 10px;
+    margin-left: 125px;
+    margin-top: 10px;
+}
+
+.compra_caja a:hover {
+    background-color: #771717;
+    box-shadow: 0 0 10px 5px rgba(175, 16, 16, 0.3);
+    transition: all 0.7s;
+
+}
+
+
+/*/ Formulario compra articulos /*/
+
+.producto_seleccionado {
+    color: #440c0c;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 35px;
+}
+
+.logo_producto {
+    display: flex;
+    padding-top: 10px;
+}
+
+.desc_precio p {
+    font-size: 16pt;
+}
+
+.logo_producto img {
+    padding-left: 15px;
+    padding-right: 10px;
+    width: 70px;
+}
+
+#formulario_articulo {
+    display: flex;
+    justify-content: center;
+    background-color: #c1bdb5;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#formulario_articulo fieldset {
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-color: #440c0c;
+
+}
+
+#formulario_articulo legend {
+    text-align: left;
+    color: #440c0c;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#formulario_articulo label {
+    color: #440c0c;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#formulario_articulo select {
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    margin-right: -5px;
+}
+
+#dias_alquilar input {
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+#formulario_articulo input, select {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+#formulario_articulo input:focus, select:focus {
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 10px 5px rgba(240, 235, 226, 0.726);
+}
+
+#formulario_articulo p {
+    color: #440c0c;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left ;
+}
+
+#submit {
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+    color: #440c0c;
+}
+
+#submit:hover {
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(240, 235, 226, 0.726);
+}
+
+#producto_seleccionado {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#producto_seleccionado p {
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+
+.input-info input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px;
+}
+
+
+.bloques {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+.bloques label {
+    float: left;
+    margin-left: 5px;
+
+}
+
+.bloques input {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#bmw_compra {
+    width: 50px;
+    margin-top: -10px;
+}
+
+#mercedes_compra {
+    width: 70px;
+    margin-top: -15px;
+}
+
+#seat_compra {
+    width: 60px;
+    margin-top: -10px;
+}
+
+#porsche_compra {
+    width: 70px;
+    margin-top: -10px;
+}
+
+#mustang_compra {
+    margin-top: -22px;
+}
+
+
+/*/ Emblemas /*/
+
+#emblema_mercedes {
+
+    margin-top: -10px;
+
+}
+
+#emblema_porsche {
+
+    margin-top: -10px;
+
+}
+
+
+/*/ Calendario /*/
+
+.evento_main {
+    background-color: #c1bdb5;
+    border-radius: 20px;
+    color: #440c0c;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.evento_main h1 {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.evento {
+    border: 1px solid #440c0c;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.evento h2, p {
+    margin-left: 20px;
+    text-align: left;
+}
+
+
+.evento img {
+    margin-top: -50px;
+    margin-left: 85%;
+    width: 100px;
+
+}
+
+
+/*/ Alquiler /*/
+
+#titulo_alquiler h2 {
+    color: #440c0c;
+    font-family: sans-serif;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#titulo_alquiler p {
+    color: #440c0c;
+    font-family: sans-serif;
+    text-align: left;
+    margin-left: 40px;
+}
+
+/*/ Venta de vehiculos /*/
+#formulario_articulo textarea {
+    width: 60%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    outline: none;
+    resize: vertical; 
+}
+
+#formulario_articulo textarea:focus {
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(240, 235, 226, 0.726);
+}
+
+
+/*/ Guia /*/
+
+.texto_guia {
+background-color: #c1bdb5;
+border-radius: 20px;
+color: #440c0c;
+font-family: sans-serif;
+padding-bottom: 10px;
+padding-top: 10px;
+padding-right: 10px;
+}
+
+.texto_guia h1 {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 18px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.texto_guia h2 {
+    text-align: left;
+    padding-left: 18px;
+}
+
+.texto_guia p {
+    text-align: justify;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.texto_guia li {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+
+/*/ Slider /*/
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}

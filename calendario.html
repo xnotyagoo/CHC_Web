@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>CHC | Inicio</title>
+    <title>CHC | Calendario de eventos  </title>
 </head>
 <body id="body">
     <!--Header-->
@@ -63,31 +63,63 @@
             </nav>
         </div>
     </header>
-    <div class="slider">
-        <ul>
-            <li>
-<img src="./imagenes/banner1.jpg" alt="">
-</li>
-            <li>
-<img src="./imagenes/banner2.png" alt="">
-</li>
-            <li>
-<img src="./imagenes/banner3.png" alt="">
-</li>
-            <li>
-<img src="./imagenes/banner4.png" alt="">
-</li>
-        </ul>
-    </div>
     <!--Body-->
-    <section class="p_texto_index">
-        <h3>Quienes Somos?</h3>
-        <p>
-            CHC, una empresa pionera en el mundo de la venta de vehiculos clasicos/historicos , ha sido líder desde su creación en 1984. Nuestra plataforma de venta, compra y alquiler de coches ofrece una amplia gama de vehículos para satisfacer las necesidades de cada cliente. Con décadas de experiencia, garantizamos transacciones seguras y transparentes, respaldadas por un equipo dedicado y conocedor del mercado automotriz. En CHC, la calidad y la satisfacción del cliente son nuestra prioridad, brindando soluciones personalizadas y un servicio excepcional en cada interacción. ¡Descubre tu próximo vehículo con CHC hoy mismo!
-        </p>
-        <br>
-        <p>Estamos establecidos en: Madrid, Barcelona, Sevilla y A Coruña.</p>
-    </section>
+    <div class="evento_main">
+   <h1>Proximos eventos:</h1>
+   <div class="evento">
+    <h2>Salida de vehiculos de Porsche </h2>
+    <p>Martes, 4 de Junio 2024 | 17:30 - 20:30  </p>
+    <aside>
+        <img src="imagenes/logos/porsche.png" alt="">
+    </aside>
+   </div>
+   <div class="evento">
+    <h2>Exposicion de coches de los 80s </h2>
+    <p>Sabado, 8 de Junio 2024 | 09:00 - 21:00  </p>
+    <aside>
+        <img src="imagenes/logos/logo_expo.png" alt="">
+    </aside>
+   </div> 
+   <div class="evento">
+    <h2>Subasta benefica de vehiculos </h2>
+    <p>Domingo, 9 de junio 2024 | 12:30 - 15:30  </p>
+    <aside>
+        <img src="imagenes/logos/subasta.png" alt="">
+    </aside>
+   </div> 
+   <div class="evento">
+    <h2>Conferencia del motor </h2>
+    <p>Sabado, 15 de junio 2024 | 17:30 - 19:30  </p>
+    <aside>
+        <img src="imagenes/logos/conferencia.png" alt="">
+    </aside>
+   </div>    
+</div>
+<div id="formulario_articulo">
+    <form action="./evento_creado.html" method="post" enctype="multipart/form-data">
+        <fieldset id="register_fieldset">
+            <h1>publica tu propio evento!</h1>
+                <p id="p_register">Aqui podras publicar tu propio evento para que las personas puedan verlo y asistir</p>
+           <div class="bloques">
+            <div class="bloque1">
+                <label for="nombre">Nombre del evento</label>
+                <br>
+                <input type="text" id="nombre" required placeholder="nombre del evento">
+                <br>
+                <label for="fecha">Fecha del evento</label>
+                <br>
+                <input type="text" id="fecha" required placeholder="Especifica la fecha">
+                <br>
+                <label for="lugar_evento">Lugar del evento</label>
+                <br>
+                <input type="text" id="lugar_evento" required placeholder="Especifica el lugar">
+                <br>
+            </div>
+           </div>
+        </fieldset>
+        <input type="submit" value="Crear evento" id="submit" required>
+    </form>
+</div>
     <!--Footer-->
     <footer>
         <div class="footer">

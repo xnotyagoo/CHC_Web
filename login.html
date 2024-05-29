@@ -9,15 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>CHC | Inicio</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>CHC | Inicia sesion!</title>
 </head>
 <body id="body">
     <!--Header-->
     <header>
         <div class="container">
             <nav class="navbar">
-                
                 <ul class="nav_links">
                     <a href="index.html"><img src="./imagenes/logo.png" alt="" id="logo_menu"></a>
                     <div class="nombre_slogan">
@@ -63,31 +62,27 @@
             </nav>
         </div>
     </header>
-    <div class="slider">
-        <ul>
-            <li>
-<img src="./imagenes/banner1.jpg" alt="">
-</li>
-            <li>
-<img src="./imagenes/banner2.png" alt="">
-</li>
-            <li>
-<img src="./imagenes/banner3.png" alt="">
-</li>
-            <li>
-<img src="./imagenes/banner4.png" alt="">
-</li>
-        </ul>
+    <!--body-->
+    <div id="formulario_articulo">
+        <form action="./reedirecion completados/login_completado.html" method="post" enctype="multipart/form-data">
+            <fieldset id="register_fieldset">
+                <h1 id="h1_login">Inicia sesion en CHC</h1>
+               <div class="bloques">
+                <div class="bloque1">
+                    <label for="nombre">Nombre de usuario</label>
+                    <br>
+                    <input type="text" id="nombre" required placeholder="nombre de usuario">
+                    <br>
+                    <label for="password">contraseña</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="contraseña" required>
+                </div>
+               </div>
+            </fieldset>
+            <br>
+            <input type="submit" value="Iniciar sesion" id="submit" required>
+        </form>
     </div>
-    <!--Body-->
-    <section class="p_texto_index">
-        <h3>Quienes Somos?</h3>
-        <p>
-            CHC, una empresa pionera en el mundo de la venta de vehiculos clasicos/historicos , ha sido líder desde su creación en 1984. Nuestra plataforma de venta, compra y alquiler de coches ofrece una amplia gama de vehículos para satisfacer las necesidades de cada cliente. Con décadas de experiencia, garantizamos transacciones seguras y transparentes, respaldadas por un equipo dedicado y conocedor del mercado automotriz. En CHC, la calidad y la satisfacción del cliente son nuestra prioridad, brindando soluciones personalizadas y un servicio excepcional en cada interacción. ¡Descubre tu próximo vehículo con CHC hoy mismo!
-        </p>
-        <br>
-        <p>Estamos establecidos en: Madrid, Barcelona, Sevilla y A Coruña.</p>
-    </section>
     <!--Footer-->
     <footer>
         <div class="footer">
@@ -106,7 +101,6 @@
                 <a href="https://www.youtube.com" target="_blank">
                     <img src="./imagenes/logos/youtube.png" alt="" id="icono_social">
                 </a>
-                
             </div>
         </div>
     </footer>
